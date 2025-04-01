@@ -48,6 +48,12 @@ export default defineConfig({
       rollupTypes: true,
       insertTypesEntry: true,
       tsconfigPath: "./tsconfig.app.json",
+      include: ["src/components/**/*", "src/hooks/**/*"],
+      exclude: ["src/**/*.stories.tsx", "src/**/*.test.tsx"],
+      beforeWriteFile: (filePath, content) => ({
+        filePath: filePath.replace("/src/", "/"),
+        content,
+      }),
     }),
     tailwindcss(),
   ],

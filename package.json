@@ -6,13 +6,28 @@
   "files": [
     "dist"
   ],
-  "main": "dist/preston-ui-umd.cjs",
-  "module": "dist/preston-ui.js",
+  "main": "./dist/components/index.js",
+  "module": "./dist/components/index.js",
+  "types": "./dist/components/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/preston-ui.js",
-      "require": "./dist/preston-ui-umd.cjs"
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js",
+      "require": "./dist/components/index.cjs"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js",
+      "require": "./dist/hooks/index.cjs"
     }
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/addons": "^8.0.0",
+    "@storybook/client-api": "^8.0.0",
+    "@storybook/preview-api": "^8.0.0"
   },
   "scripts": {
     "dev": "vite",
