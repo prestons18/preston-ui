@@ -15,7 +15,6 @@ export default defineConfig({
     lib: {
       entry: {
         components: path.resolve(__dirname, "./src/components/index.tsx"),
-        hooks: path.resolve(__dirname, "./src/hooks/index.ts"),
       },
       formats: ["es", "cjs"],
     },
