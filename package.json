@@ -1,24 +1,24 @@
 {
   "name": "preston-ui",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/components/index.js",
-  "module": "./dist/components/index.js",
-  "types": "./dist/components/index.d.ts",
+  "main": "./dist/components.js",
+  "module": "./dist/components.js",
+  "types": "./dist/components.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/components/index.d.ts",
-      "import": "./dist/components/index.js",
-      "require": "./dist/components/index.cjs"
+      "types": "./dist/components.d.ts",
+      "import": "./dist/components.js",
+      "require": "./dist/components.cjs"
     },
     "./hooks": {
-      "types": "./dist/hooks/index.d.ts",
-      "import": "./dist/hooks/index.js",
-      "require": "./dist/hooks/index.cjs"
+      "types": "./dist/hooks.d.ts",
+      "import": "./dist/hooks.js",
+      "require": "./dist/hooks.cjs"
     }
   },
   "peerDependencies": {
